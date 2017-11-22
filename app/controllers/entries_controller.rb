@@ -13,7 +13,8 @@ class EntriesController < ApplicationController
   end
 
   def edit
-
+    render
+    :edit
   end
 
   def update
@@ -26,7 +27,7 @@ class EntriesController < ApplicationController
 
 
   def destroy
-
+    redirect_to entries_url
   end
 
 end
