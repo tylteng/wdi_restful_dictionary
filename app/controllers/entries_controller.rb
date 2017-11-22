@@ -16,13 +16,14 @@ class EntriesController < ApplicationController
 
   end
 
+  def update
+    redirect_to entry_url(params[:id])
+  end
+
   def show
     render :show
   end
 
-  def update
-
-  end
 
   def destroy
 
