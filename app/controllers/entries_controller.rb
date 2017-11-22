@@ -4,8 +4,8 @@ class EntriesController < ApplicationController
     render :index
   end
 
-  def create
-
+  def new
+    render :new
   end
 
   def edit
@@ -13,7 +13,7 @@ class EntriesController < ApplicationController
   end
 
   def show
-
+    render :show
   end
 
   def update
