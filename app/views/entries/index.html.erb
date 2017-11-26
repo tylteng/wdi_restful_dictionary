@@ -1,1 +1,6 @@
-<h1>this is the entries page</h1>
+<h1>Tyler's Dictionary</h1>
+<%= link_to 'new word', new_entry_path %><br><br>
+<% @entries.each do |x| %>
+<%= "#{x.word}(#{x.language}): #{x.definition}" %><br>
+<%= link_to 'view', entry_path(x) %><br><br>
+<% end %>
